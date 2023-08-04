@@ -1,0 +1,10 @@
+$black: #1b1b1b;
+$green: #01e85d;
+$white: #ffffff;
+
+
+@mixin flex($jc: start, $ai: start){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}

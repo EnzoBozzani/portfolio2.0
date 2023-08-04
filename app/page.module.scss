@@ -1,0 +1,28 @@
+@import '@/src/styles/variables.scss';
+
+.wrapper {
+    width: 100%;
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 2rem;
+    img {
+        height: auto;
+        border-radius: 100%;
+        animation: pulse 1.5s infinite alternate ease;
+    }
+    p {
+        font-size: 2.5rem;
+        text-align: center;
+        color: $white;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+
+    100% {
+        box-shadow: 0 0 30px 5px $green;
+    }
+}
