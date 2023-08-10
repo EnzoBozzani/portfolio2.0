@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { Header } from '@/src/components';
+import { Header, Footer} from '@/src/components';
 import '@/src/styles/styles.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className='layout'>
           <Header />
           {children}
+          <Footer />
         </main>
       </body>
     </html>

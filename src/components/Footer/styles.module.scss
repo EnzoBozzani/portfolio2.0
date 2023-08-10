@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+    margin-top: auto;
+    width: 100%;
+    @include flex(center, center);
+    a {
+        width: 60px;
+        @include flex(center, center);
+        img {
+            width: 100%;
+            color: #fff;
+            // adicionar hover de box shadow 
+        }
+    }
+}

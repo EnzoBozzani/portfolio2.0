@@ -5,7 +5,7 @@ import styles from './page.module.scss';
 const Home: NextPage = () => {
   return (
     <main className={styles.wrapper}>
-      <Image src='/profile.jpg' alt="Profile Picture" width={225} height={956}/>
+      <Image src='/profile.jpg' alt="Profile Picture" width={225} height={956} />
       <p>
         I'm a Software Developer <br />JavaScript, TypeScript, React ????
       </p>
