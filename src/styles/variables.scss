@@ -4,7 +4,7 @@ $white: #ffffff;
 $grey: #ffffff5e;
 
 
-@mixin flex($jc: start, $ai: start){
+@mixin flex($jc, $ai){
     display: flex;
     justify-content: $jc;
     align-items: $ai;

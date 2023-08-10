@@ -4,13 +4,22 @@
     margin-top: auto;
     width: 100%;
     @include flex(center, center);
-    a {
-        width: 60px;
+    flex-direction: column;
+    padding: 1rem 0;
+    hr {
+        width: 90%;
+        color: $grey;
+    }
+    div {
         @include flex(center, center);
-        img {
-            width: 100%;
-            color: #fff;
-            // adicionar hover de box shadow 
+        gap: 10px;
+        width: 100%;
+        a {
+            width: 60px;
+            @include flex(center, center);
+            svg {
+                width: 100%;
+            }
         }
     }
 }
