@@ -2,7 +2,7 @@
 
 .wrapper {
     width: 100%;
-    padding: 1rem 2rem 0 2rem;
+    padding: 1rem 2rem 0 1rem;
     @include flex(space-between, center);
     margin-bottom: 5rem;
     .title {
