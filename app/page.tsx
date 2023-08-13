@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import styles from './page.module.scss';
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -20,15 +21,17 @@ const Home: NextPage = () => {
             About me
           </p>
           <p>
-            Hello, my name is Enzo Bozzani, I'm 19 years old, and I'm passionate about Software Development. Currently, I'm studying Computer Science at Centro Universitário FEI with the goal of learning more and more about the world of technology. I've been programming with JavaScript for over 1 year, but recently I've been using TypeScript to build more secure applications.
-          </p>
+            Hello, my name is <span className='highlighted'>Enzo Bozzani</span>, I'm 19 years old, and I'm passionate about technology, specially software development. 
+            Currently, I'm studying <span className='highlighted'>Computer Science</span> at Centro Universitário FEI. 
+            I'm from Santos (Brazil), so my native language is portuguese, but I also speak english.          </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti culpa harum labore id dolorem vitae recusandae debitis tenetur amet aliquid ipsum quas, repellat minima ipsam facilis iure velit cupiditate ratione.
+            I've experience and familiarity with <span className='highlighted'>JavaScript</span>, <span className='highlighted'>TypeScript</span>, <span className='highlighted'>ReactJS</span> and <span className='highlighted'>NodeJS</span>, but also worked with Python, C and Java. 
+            For more information on my tech stack, go to <Link href={'/tech'}>Tech Stack</Link>.
           </p>
         </article>
-        <article>
-
-        </article>
+        <div>
+          <Image src='/coding.gif' alt="gif" width={500} height={400}/>
+        </div>
       </section>
     </main>
   )

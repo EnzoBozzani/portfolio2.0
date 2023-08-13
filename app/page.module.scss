@@ -29,7 +29,10 @@
         width: 100%;
         @include flex(center, center);
         article {
+            padding: 0 2rem;
             width: 50%;
+            @include flex(center, center);
+            flex-direction: column;
             .sectionTitle {
                 color: $green;
                 font-size: 2rem;
@@ -38,8 +41,20 @@
             p {
                 color: $white;
                 text-align: justify;
-                padding: 0 1rem;
                 font-weight: 500;
+                a {
+                    color: $green;
+                }
+            }
+        }
+        div {
+            width: 50%;
+            @include flex(center, center);
+            padding-top: 50px;
+            img {
+                height: auto;
+                border-radius: 20px;
+                border: 1px solid $green;
             }
         }
     }
