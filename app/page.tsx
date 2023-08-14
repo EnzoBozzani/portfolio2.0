@@ -7,9 +7,7 @@ const Home: NextPage = () => {
   return (
     <main className={styles.wrapper}>
       <div className={styles.imgs}>
-        <Image src='/circuit.svg' alt="circuit right" width={1440} height={500} className={styles.circuit} style={{transform: 'rotate(180deg)'}} />
         <Image src='/profile.jpg' alt="Profile Picture" width={225} height={956} className={styles.titleImg} />
-        <Image src='/circuit.svg' alt="circuit left" width={1440} height={500} className={styles.circuit} />
       </div>
       <p className={styles.titleText}>
         I'm a Software Developer <br />

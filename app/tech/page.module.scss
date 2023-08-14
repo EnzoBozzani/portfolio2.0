@@ -1,0 +1,18 @@
+@import '../../src/styles/variables.scss';
+
+.wrapper {
+    width: 100%;
+    color: $white;
+    @include flex(center, center);
+    flex-direction: column;
+    section {
+        @include flex(center, center);
+        div {
+            width: 50%;
+            padding: 0 1rem;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}

@@ -29,12 +29,13 @@
         width: fit-content;
         a {
             text-decoration: none;
-            color: $green;
+            color: $grey;
             transition: .5s;
             border-bottom: 2px solid transparent;
             padding-bottom: 10px;
             &:hover {
                 border-bottom-color: $green;
+                color: $white;
             }
         }
     }
