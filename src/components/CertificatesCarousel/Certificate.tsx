@@ -1,7 +1,8 @@
-import Image from "next/image"
-
-export const Certificate = ({src}:{src: string}) => {
+export const Certificate = ({ src, display, text } : { src: string, display: string, text: string }) => {
     return (
-        <Image src={src} alt="certificate" width={500} height={500}/>
+        <div style={{display: display}}>
+            <img src={src} alt="certificate"/>
+            <p>{text}</p>
+        </div>
     )
 }

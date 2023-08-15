@@ -2,6 +2,7 @@
 
 .wrapper {
     width: 100%;
+    @include flex(center, center);
     div {
         width: 50%;
         .title {
@@ -22,9 +23,18 @@
     .certificates {
         @include flex(center, center);
         gap: 10px;
-        img {
+        div {
             width: 80%;
-            height: auto;
+            @include flex(center, center);
+            flex-direction: column;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            p {
+                text-align: center;
+                color: $green;
+            }
         }
     }
 }
