@@ -3,7 +3,7 @@
 .wrapper {
     width: 100%;
     @include flex(center, center);
-    div {
+    .sections {
         width: 50%;
         .title {
             width: 50%;
@@ -22,7 +22,6 @@
     }
     .certificates {
         @include flex(center, center);
-        gap: 10px;
         div {
             width: 80%;
             @include flex(center, center);
@@ -33,7 +32,17 @@
             }
             p {
                 text-align: center;
-                color: $green;
+                color: $grey;
+            }
+        }
+        button {
+            background-color: transparent;
+            border: 0;
+            width: 10%;
+            img {
+                width: 100%;
+                height: auto;
+                transition: .5s;
             }
         }
     }

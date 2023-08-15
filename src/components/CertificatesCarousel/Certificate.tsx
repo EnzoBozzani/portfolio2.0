@@ -2,7 +2,7 @@ export const Certificate = ({ src, display, text } : { src: string, display: str
     return (
         <div style={{display: display}}>
             <img src={src} alt="certificate"/>
-            <p>{text}</p>
+            <p>{text} Module given by OneBitCode</p>
         </div>
     )
 }
