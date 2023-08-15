@@ -1,0 +1,30 @@
+@import '@/src/styles/variables.scss';
+
+.wrapper {
+    width: 100%;
+    div {
+        width: 50%;
+        .title {
+            width: 50%;
+            color: $green;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+        padding: 2rem;
+    }
+    .text {
+        @include flex(center, center);
+        flex-direction: column;
+        p {
+            text-align: justify;
+        }
+    }
+    .certificates {
+        @include flex(center, center);
+        gap: 10px;
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
+}

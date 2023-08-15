@@ -5,11 +5,18 @@
     color: $white;
     @include flex(center, center);
     flex-direction: column;
-    section {
+    .title {
+        color: $green;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .techSection {
         @include flex(center, center);
-        div {
-            width: 50%;
-            padding: 0 1rem;
+        flex-direction: column-reverse;
+
+        .texts {
+            width: 100%;
+            padding: 0 2rem;
             p {
                 text-align: justify;
             }
