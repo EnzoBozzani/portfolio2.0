@@ -1,0 +1,18 @@
+@import '@/src/styles/variables.scss';
+
+.wrapper {
+    width: 80%;
+    @include flex(center, center);
+    flex-direction: column;
+    img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 5px $green;
+    }
+    p {
+        margin-bottom: 10px;
+        text-align: center;
+        color: $green;
+        font-size: 1.5rem;
+    }
+}

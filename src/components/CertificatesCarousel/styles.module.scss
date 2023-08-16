@@ -22,23 +22,11 @@
     }
     .certificates {
         @include flex(center, center);
-        div {
-            width: 80%;
-            @include flex(center, center);
-            flex-direction: column;
-            img {
-                width: 100%;
-                height: auto;
-            }
-            p {
-                text-align: center;
-                color: $grey;
-            }
-        }
         button {
             background-color: transparent;
             border: 0;
-            width: 10%;
+            width: 7%;
+            margin-top: 1.5rem;
             img {
                 width: 100%;
                 height: auto;

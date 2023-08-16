@@ -26,7 +26,7 @@ export const CertificatesCarousel: React.FC = () => {
                         })
                     }
                 >
-                    <Image src='/arrow.png' alt='arrow' style={{rotate: '180deg'}} height={100} width={100}/>
+                    <Image src='/arrow.png' alt='arrow' height={100} width={100}/>
                 </button>
                 <Certificate src={'/html.png'} display={selected === 0 ? 'block' : 'none'} text='HTML'/>
                 <Certificate src={'/css.png'} display={selected === 1 ? 'block' : 'none'} text='CSS'/>
@@ -51,7 +51,7 @@ export const CertificatesCarousel: React.FC = () => {
                         })
                     }
                 >
-                    <Image src='/arrow.png' alt='arrow' height={100} width={100}/>
+                    <Image src='/arrow.png' alt='arrow' height={100} width={100} style={{rotate: '180deg'}}/>
                 </button>
             </div>
         </section>
