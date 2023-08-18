@@ -3,21 +3,11 @@
 .wrapper {
     width: 100%;
     @include flex(center, center);
-    .text {
-        width: 70%;
-    }
-    .techs {
-        width: 30%;
-        @include flex(center, center);
-        flex-direction: column;
-        span {
-            width: 80%;
-            @include flex(center, center);
-            gap: 1%;
-            color: $grey;
-            img {
-                width: 100%;
-            }
-        }
+    flex-direction: column;
+    padding: 1rem 2rem;
+    .title {
+        color: $green;
+        font-size: 2rem;
+        font-weight: 800;
     }
 }
