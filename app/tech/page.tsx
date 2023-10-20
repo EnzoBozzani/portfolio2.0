@@ -7,6 +7,9 @@ const Tech: NextPage = () => {
         <main className={styles.wrapper}>
             <p className={styles.title}>Tech Stack</p>
             <section className={styles.techSection}>
+                <div>
+                    <Technologies />
+                </div>
                 <div className={styles.texts}>
                     <p>
                         Before even entering college, my interest in programming had already been awakened, what made me watch courses on YouTube, specially about web development and programming logic. This initial passion was the foundation that propelled me to the next step: college.
@@ -17,12 +20,9 @@ const Tech: NextPage = () => {
                         In fact, <span className="highlighted">this portfolio was developed using ReactJS, TypeScript and NextJS</span>, stack which, nowadays, is the one I use the most.
                     </p>
                 </div>
-                <div>
-                    <Technologies/>
-                </div>
             </section>
-            <CertificatesCarousel/>
-            <LeastUsedTech/>
+            <CertificatesCarousel />
+            <LeastUsedTech />
         </main>
     )
 }

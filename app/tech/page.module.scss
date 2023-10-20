@@ -12,7 +12,7 @@
     }
     .techSection {
         @include flex(center, center);
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         .texts {
             width: 100%;
