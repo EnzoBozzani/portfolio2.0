@@ -4,8 +4,8 @@ export const Footer: React.FC = () => {
     const [github, setGithub] = useState('#ffffff5e');
     const [linkedin, setLinkedin] = useState('#ffffff5e');
     return (
-        <footer className='mt-16 w-full flex justify-center items-center flex-col py-8'>
-            <span className='h-px bg-gray w-{9/10} mx-auto'></span>
+        <footer className='mt-16 w-full flex justify-center items-center flex-col p-8'>
+            <span className='h-px bg-gray w-full mx-auto'></span>
             <div className='py-4 flex justify-center items-center gap-2.5 w-full'>
                 <a href="https://github.com/EnzoBozzani" target='_blank' className='w-16 flex justify-center items-center'>
                     <svg
