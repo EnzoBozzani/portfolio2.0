@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { ProjectCard } from "@/src/components";
+import { ProjectCard, PagesLayout } from "@/src/components";
 import { ReactElement } from "react";
 import { TechSvg } from "@/src/components/TechSvg";
 import styles from './page.module.scss';
@@ -25,16 +25,18 @@ const projects: Project[] = [
 
 const Projects: NextPage = () => {
     return (
-        <main className={styles.wrapper}>
-            <p className={styles.title}>
-                Projects
-            </p>
-            {projects.map((project) => {
-                return (
-                    <ProjectCard project={project} />
-                )
-            })}
-        </main>
+        <PagesLayout>
+            <main className={styles.wrapper}>
+                <p className={styles.title}>
+                    Projects
+                </p>
+                {projects.map((project) => {
+                    return (
+                        <ProjectCard project={project} />
+                    )
+                })}
+            </main>
+        </PagesLayout>
     )
 }
 
