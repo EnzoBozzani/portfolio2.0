@@ -25,3 +25,17 @@ p,
 span {
     font-weight: 600;
 }
+
+.pulseAnimation {
+    animation: pulse 1.5s infinite alternate ease;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+
+    100% {
+        box-shadow: 0 0 30px 5px #01e85d;
+    }
+}

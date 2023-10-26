@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import styles from './page.module.scss';
-import { Technologies, CertificatesCarousel, LeastUsedTech, PagesLayout } from "@/src/components/";
+import { Technologies, CertificatesCarousel, PagesLayout } from "@/src/components/";
 
 const Tech: NextPage = () => {
     return (
@@ -23,7 +23,6 @@ const Tech: NextPage = () => {
                     </div>
                 </section>
                 <CertificatesCarousel />
-                <LeastUsedTech />
             </main>
         </PagesLayout>
     )

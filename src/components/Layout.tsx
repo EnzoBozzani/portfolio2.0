@@ -10,7 +10,9 @@ interface props {
 export const PagesLayout: React.FC<props> = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     useEffect(() => {
-        Aos.init();
+        Aos.init({
+            duration: 500
+        });
     }, []);
 
     return (
@@ -23,7 +25,6 @@ export const PagesLayout: React.FC<props> = ({ children }) => {
                 (
                     <>
                         <Header
-                            isOpen={isOpen}
                             setIsOpen={setIsOpen}
                         />
                         {children}
