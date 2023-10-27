@@ -1,8 +1,7 @@
 import { NextPage } from "next";
 import { ProjectCard, PagesLayout } from "@/src/components";
 import { ReactElement } from "react";
-import { TechSvg } from "@/src/components/TechSvg";
-import styles from './page.module.scss';
+import { TechSvg } from "@/src/components";
 
 export type Project = {
     title: string,
@@ -26,8 +25,8 @@ const projects: Project[] = [
 const Projects: NextPage = () => {
     return (
         <PagesLayout>
-            <main className={styles.wrapper}>
-                <p className={styles.title}>
+            <main>
+                <p>
                     Projects
                 </p>
                 {projects.map((project) => {

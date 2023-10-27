@@ -1,6 +1,3 @@
-'use client';
-
-import styles from './styles.module.scss';
 import { Certificate } from './Certificate';
 import { useState } from 'react';
 import Image from 'next/image';
@@ -9,24 +6,23 @@ import Image from 'next/image';
 export const CertificatesCarousel: React.FC = () => {
     const [selected, setSelected] = useState(0);
     return (
-        <section className={styles.wrapper}>
-            <div className={`${styles.text} ${styles.sections}`}>
-                <p className={styles.title}>Certificates</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ducimus vel tempora fugiat sint totam aliquam doloribus placeat, sunt possimus in. Dolores atque cumque commodi animi. Fugit assumenda error, veritatis corporis voluptates ipsa ullam reiciendis non natus. Voluptatem tenetur facere ut iure sapiente consequuntur officiis at dicta! Minus nemo nihil a aut, veritatis maxime nulla voluptatem aliquam totam. Cum cupiditate eius dolores, perspiciatis id laudantium asperiores! Vitae dignissimos dolore doloremque?</p>
+        <section className='mt-12 max-w-screen-lg mx-auto flex flex-col justify-center items-center'>
+            <div className='w-full text-center text-green text-4xl font-black'>
+                <p>Certificates</p>
             </div>
-            <div className={`${styles.certificates} ${styles.sections}`}>
+            <div className='w-full mt-8 flex justify-center items-center'>
                 <button
+                    className='bg-transparent border-none w-14'
                     onClick={() => setSelected(currentState => {
                         if (selected === 0) {
                             return 11;
                         }
                         currentState--;
-                        console.log(currentState);
                         return currentState;
                     })
                     }
                 >
-                    <Image src='/arrow.png' alt='arrow' height={100} width={100} />
+                    <Image className='w-full h-auto transition duration-500' src='/arrow.png' alt='arrow' height={100} width={100} />
                 </button>
                 <Certificate src={'/html.png'} display={selected === 0 ? 'block' : 'none'} text='HTML' />
                 <Certificate src={'/css.png'} display={selected === 1 ? 'block' : 'none'} text='CSS' />
@@ -41,17 +37,17 @@ export const CertificatesCarousel: React.FC = () => {
                 <Certificate src={'/sql.png'} display={selected === 10 ? 'block' : 'none'} text='SQL' />
                 <Certificate src={'/bootstrap.png'} display={selected === 11 ? 'block' : 'none'} text='BootStrap' />
                 <button
+                    className='bg-transparent border-none w-14'
                     onClick={() => setSelected(currentState => {
                         if (selected === 11) {
                             return 0;
                         }
                         currentState++;
-                        console.log(currentState);
                         return currentState;
                     })
                     }
                 >
-                    <Image src='/arrow.png' alt='arrow' height={100} width={100} style={{ rotate: '180deg' }} />
+                    <Image className='w-full h-auto' src='/arrow.png' alt='arrow' height={100} width={100} style={{ rotate: '180deg' }} />
                 </button>
             </div>
         </section>

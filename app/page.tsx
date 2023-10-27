@@ -29,7 +29,7 @@ const Home: NextPage = () => {
               I'm from Santos (Brazil), so my native language is portuguese, but I also speak english.          </p>
             <p className='text-white text-justify font-medium'>
               I've experience and familiarity with <span className='highlighted'>JavaScript</span>, <span className='highlighted'>TypeScript</span>, <span className='highlighted'>ReactJS</span> and <span className='highlighted'>NodeJS</span>, but also worked with Python, C and Java.
-              For more information on my tech stack, go to <Link href={'/tech'} className='text-green underline'>Tech Stack</Link>.
+              For more information on my tech stack, go to <Link href={'/experience'} className='text-green underline'>Experience</Link>.
             </p>
           </article>
           <div className='w-full flex justify-center items-center'>

@@ -7,5 +7,6 @@ import { Technologies } from "./TechnologiesLine";
 import { CertificatesCarousel } from "./CertificatesCarousel";
 import { ProjectCard } from './ProjectCard';
 import { HeaderOffcanvas } from "./HeaderOffcanvas";
+import { TechSvg } from "./TechSvg";
 
-export { PagesLayout, Header, Footer, Technologies, CertificatesCarousel, ProjectCard, HeaderOffcanvas };
+export { PagesLayout, Header, Footer, Technologies, CertificatesCarousel, ProjectCard, HeaderOffcanvas, TechSvg };
