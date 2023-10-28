@@ -7,7 +7,7 @@ interface Props {
 }
 
 const classes = {
-    homeAnchor: 'w-fit py-1.5 px-5 text-white text-xl sm:text-2xl md:text-4xl flex justify-start items-start transition duration-500 hover:text-green'
+    homeAnchor: 'w-fit py-1.5 px-5 text-white text-xl sm:text-2xl md:text-4xl flex justify-start items-start transition duration-500 hover:scale-125'
 }
 
 export const Header: React.FC<Props> = ({ setIsOpen }: Props) => {
@@ -33,7 +33,7 @@ export const Header: React.FC<Props> = ({ setIsOpen }: Props) => {
     return (
         <header className="flex justify-between p-6 w-full mb-8">
             <Link data-aos='flip-up' href={'/'} className={classes.homeAnchor}>
-                <span className="text-green">{'</>'}</span><span>Enzo</span><span>Bozzani</span>
+                <span className="text-green me-2">{'</>'}</span><span>Enzo</span><span>Bozzani</span>
             </Link>
             <nav className="flex justify-center items-center gap-2.5 w-fit">
                 <Link data-aos='flip-up' href={'/experience'} className="text-gray transition duration-500 border-b-2 border-dark pb-3 hover:border-green hover:text-white">

@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Technologies, CertificatesCarousel, PagesLayout } from "@/src/components/";
+import { Technologies, CertificatesCarousel, PagesLayout, ExperienceCard } from "@/src/components/";
 
 const Tech: NextPage = () => {
     return (
@@ -9,6 +9,9 @@ const Tech: NextPage = () => {
                 <section className='flex flex-col justify-center items-center'>
                     <div>
                         <Technologies />
+                    </div>
+                    <div>
+                        <ExperienceCard />
                     </div>
                     <div className='w-full px-8'>
                         <p className='text-justify'>

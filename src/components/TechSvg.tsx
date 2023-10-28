@@ -1,6 +1,10 @@
 import { ReactNode, useState } from "react";
 
-export const TechSvg = ({ children }: { children: ReactNode }) => {
+interface Props {
+    children: ReactNode
+}
+
+export const TechSvg: React.FC<Props> = ({ children }: Props) => {
     const grey = '#ffffff5e';
     const green = '#01e85d';
     const [color, setColor] = useState(grey);
