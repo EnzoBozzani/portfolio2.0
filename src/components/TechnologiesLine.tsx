@@ -1,6 +1,17 @@
-import { TechSvg } from './TechSvg';
+import { useContext } from 'react';
+import { TechIconsSlide, TechSvg } from '.';
+import { ScreenWidthContext } from './Layout';
 
 export const Technologies: React.FC = () => {
+    const { width } = useContext(ScreenWidthContext);
+
+    if (width < 1024) {
+        return (
+            <div className='w-full flex justify-center items-center'>
+                <TechIconsSlide />
+            </div>
+        )
+    }
 
     const spanClassName = 'flex justify-center items-center sm:gap-2 md:gap-5 w-2/5 md:w-auto'
 

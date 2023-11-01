@@ -8,6 +8,7 @@ import { HeaderOffcanvas } from "./HeaderOffcanvas";
 import { TechSvg } from "./TechSvg";
 import { ExperienceCard } from "./ExperienceCard";
 import { SlideCard } from "./SlideCard";
-import { SlideComponent } from "./SlideComponent";
+import { CertificatesSlide } from "./CertificatesSlide";
+import { TechIconsSlide } from "./TechIconsSlide";
 
-export { PagesLayout, Header, Footer, Technologies, HeaderOffcanvas, TechSvg, ExperienceCard, SlideCard, SlideComponent };
+export { PagesLayout, Header, Footer, Technologies, HeaderOffcanvas, TechSvg, ExperienceCard, SlideCard, CertificatesSlide, TechIconsSlide };

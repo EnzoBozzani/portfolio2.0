@@ -5,6 +5,9 @@ import { SlideCard } from '.';
 
 const certificates = [
     {
+        url: '/fei.png'
+    },
+    {
         url: '/html.png',
         title: 'HTML'
     },
@@ -54,11 +57,11 @@ const certificates = [
     },
 ]
 
-export const SlideComponent: React.FC = () => {
+export const CertificatesSlide: React.FC = () => {
 
     return (
         <>
-            <div className='d-flex flex-column align-items-center py-4'>
+            <div className='d-flex flex-column justify-center items-center py-4'>
                 <Splide options={{
                     type: 'loop',
                     perPage: 3,
@@ -69,15 +72,16 @@ export const SlideComponent: React.FC = () => {
                     drag: true,
                     breakpoints: {
                         1200: {
-                            perPage: 4,
-                            width: 300,
+                            perPage: 1,
+                            width: 600,
                         },
                         600: {
                             perPage: 1,
                             width: 300,
                         },
                         300: {
-                            width: 250,
+                            perPage: 1,
+                            width: 290,
                         }
                     }
                 }}>

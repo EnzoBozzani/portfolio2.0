@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Technologies, PagesLayout, ExperienceCard, SlideComponent } from "@/src/components/";
+import { Technologies, PagesLayout, ExperienceCard, CertificatesSlide } from "@/src/components/";
 
 const Tech: NextPage = () => {
     return (
@@ -22,7 +22,7 @@ const Tech: NextPage = () => {
                             Tech Stack
                         </p>
                         <Technologies />
-                        <p>
+                        <p className="text-justify">
                             As a developer, my tech stack is a well-rounded combination of web development technologies.
                             I have hands-on experience with front-end technologies such as <span className="highlighted">HTML</span>, <span className="highlighted">CSS</span>, <span className="highlighted">SASS</span>, <span className="highlighted">BootStrap</span>,
                             and <span className="highlighted">Tailwind</span>, allowing me to craft visually appealing and responsive user interfaces.
@@ -30,13 +30,14 @@ const Tech: NextPage = () => {
                             building interactive web applications using the <span className="highlighted">React</span> library.
                             For version control, I'm used to work with <span className="highlighted">Git & GitHub</span>.
                             On the back end, I'm well-versed in <span className="highlighted">NodeJS</span> and have worked with both NoSQL databases
-                            like <span className="highlighted">MongoDB</span> and <span className="highlighted">relational databases using NodeJS</span>, providing me with a full-stack development capability.                        </p>
+                            like <span className="highlighted">MongoDB</span> and <span className="highlighted">relational databases using NodeJS</span>, providing me with a full-stack development capability.
+                        </p>
                     </div>
                 </section>
                 <p className="mx-auto mt-12 text-green font-bold text-4xl">
                     Certificates
                 </p>
-                <SlideComponent />
+                <CertificatesSlide />
             </main>
         </PagesLayout>
     )
