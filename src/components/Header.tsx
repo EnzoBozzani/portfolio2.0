@@ -1,6 +1,7 @@
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 import { getScreenWidth } from "../utils/getScreenWidth";
+import { ScreenWidthContext } from "./Layout";
 
 interface Props {
     setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -11,7 +12,7 @@ const classes = {
 }
 
 export const Header: React.FC<Props> = ({ setIsOpen }: Props) => {
-    const width = getScreenWidth();
+    const { width } = useContext(ScreenWidthContext);
 
     if (width <= 768) {
         return (

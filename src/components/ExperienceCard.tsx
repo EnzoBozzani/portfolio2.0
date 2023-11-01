@@ -27,7 +27,7 @@ export const ExperienceCard: React.FC = () => {
             </div>
             <div className='text-center'>
                 FrontEnd Development using React, TypeScript, Redux, CSS & Vite.
-                CADFEI is the Universitary Center FEI professor's institucional website.
+                CADFEI is FEI professor's institucional website.
             </div>
             <span className="text-gray">
                 September/2023 - Now
