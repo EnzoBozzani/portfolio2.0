@@ -10,5 +10,6 @@ import { ExperienceCard } from "./ExperienceCard";
 import { SlideCard } from "./SlideCard";
 import { CertificatesSlide } from "./CertificatesSlide";
 import { TechIconsSlide } from "./TechIconsSlide";
+import { Development } from "./Development";
 
-export { PagesLayout, Header, Footer, Technologies, HeaderOffcanvas, TechSvg, ExperienceCard, SlideCard, CertificatesSlide, TechIconsSlide };
+export { PagesLayout, Header, Footer, Technologies, HeaderOffcanvas, TechSvg, ExperienceCard, SlideCard, CertificatesSlide, TechIconsSlide, Development };

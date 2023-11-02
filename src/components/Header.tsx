@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useContext } from "react";
-import { getScreenWidth } from "../utils/getScreenWidth";
 import { ScreenWidthContext } from "./Layout";
 
 interface Props {

@@ -1,11 +1,11 @@
 import { NextPage } from "next";
-import { PagesLayout } from "@/src/components";
+import { Development, PagesLayout } from "@/src/components";
 
 const Projects: NextPage = () => {
     return (
         <PagesLayout>
-            <main>
-
+            <main className="flex-1">
+                <Development />
             </main>
         </PagesLayout>
     )
