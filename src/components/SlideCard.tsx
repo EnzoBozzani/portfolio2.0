@@ -10,7 +10,12 @@ export const SlideCard: React.FC<Props> = ({ url, title }) => {
             <Image
                 src={url}
                 alt="certificate"
-                className='w-full h-auto'
+                width={288}
+                height={300}
+                style={{
+                    width: '100%',
+                    height: 'auto'
+                }}
             />
             <p className="w-full h-full text-center font-sm">
                 {

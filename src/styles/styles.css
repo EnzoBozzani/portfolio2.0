@@ -30,6 +30,23 @@ span {
     animation: pulse 1.5s infinite alternate ease;
 }
 
+.pulse-with-border-animation {
+    border: 2px solid #ffffff5e;
+    animation: pulse-with-border 2.5s infinite alternate ease;
+}
+
+@keyframes pulse-with-border {
+    0% {
+        box-shadow: 0 0 5px transparent;
+        border-color: #ffffff5e;
+    }
+
+    100% {
+        box-shadow: 0 0 30px 5px #01e85d;
+        border-color: #01e85d;
+    }
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 5px transparent;
