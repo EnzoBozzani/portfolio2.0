@@ -46,13 +46,13 @@ export const Header: React.FC<Props> = ({ setIsOpen }: Props) => {
                 <span>Enzo</span><span>Bozzani</span>
             </Link>
             <nav className="flex justify-center items-center gap-2.5 w-fit">
-                <Link data-aos='flip-up' href={'/experience'} className="text-gray transition duration-500 border-b-2 border-dark pb-3 hover:border-green hover:text-white">
+                <Link data-aos='flip-up' href={'/experience'} className="text-gray transition duration-500 border-b-2 border-transparent pb-3 hover:border-green hover:text-white">
                     Experience
                 </Link>
-                <Link data-aos='flip-up' href={'/projects'} className="text-gray transition duration-500 border-b-2 border-dark pb-3 hover:border-green hover:text-white">
+                <Link data-aos='flip-up' href={'/projects'} className="text-gray transition duration-500 border-b-2 border-transparent pb-3 hover:border-green hover:text-white">
                     Projects
                 </Link>
-                <Link data-aos='flip-up' href={'/contact'} className="text-gray transition duration-500 border-b-2 border-dark pb-3 hover:border-green hover:text-white">
+                <Link data-aos='flip-up' href={'/contact'} className="text-gray transition duration-500 border-b-2 border-transparent pb-3 hover:border-green hover:text-white">
                     Contact
                 </Link>
             </nav>

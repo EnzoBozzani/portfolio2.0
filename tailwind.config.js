@@ -15,6 +15,8 @@ module.exports = {
                 gray: '#ffffff5e',
                 white: '#fff',
                 dark: '#1b1b1b',
+                gradient1: '#000000',
+                gradient2: '#434343',
             },
         },
     },

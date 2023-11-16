@@ -1,7 +1,7 @@
 export const ExperienceCard: React.FC = () => {
 
     return (
-        <div className='pulse-with-border-animation max-w-screen-xl rounded-lg px-4 flex flex-col items-center justify-center gap-6 py-2 my-8 mx-4'>
+        <div className='pulse-with-border-animation max-w-screen-xl rounded-lg px-4 flex flex-col items-center justify-center gap-6 py-2 m-8'>
             <div className="highlighted">
                 FrontEnd Developer at CADFEI: Professor Career Institucional Website
             </div>

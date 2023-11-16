@@ -25,7 +25,7 @@ export const PagesLayout: React.FC<Props> = ({ children }) => {
     }, []);
 
     return (
-        <main className='layout'>
+        <main className='layout bg-gradient-to-b from-dark via-dark to-black'>
             <ScreenWidthContext.Provider value={{ width }} >
                 {isOpen ?
                     <HeaderOffcanvas
