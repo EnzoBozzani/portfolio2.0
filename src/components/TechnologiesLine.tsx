@@ -4,6 +4,11 @@ import { ScreenWidthContext } from './Layout';
 
 export const Technologies: React.FC = () => {
     const { width } = useContext(ScreenWidthContext);
+    const spanClassName = 'flex justify-center items-center sm:gap-2 md:gap-5 w-2/5 md:w-auto';
+    const grey = '#ffffff5e';
+    const green = '#01e85d';
+    const [nextIconColor, setNextIconColor] = useState(grey);
+    const [tailwindIconColor, setTailwindIconColor] = useState(grey);
 
     if (width < 1024) {
         return (
@@ -12,12 +17,6 @@ export const Technologies: React.FC = () => {
             </div>
         )
     }
-
-    const spanClassName = 'flex justify-center items-center sm:gap-2 md:gap-5 w-2/5 md:w-auto';
-    const grey = '#ffffff5e';
-    const green = '#01e85d';
-    const [nextIconColor, setNextIconColor] = useState(grey);
-    const [tailwindIconColor, setTailwindIconColor] = useState(grey);
 
     return (
         <div className='flex justify-center items-center sm:gap-2 md:gap-5 w-full py-8 flex-wrap'>

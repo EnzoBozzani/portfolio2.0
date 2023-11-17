@@ -107,11 +107,12 @@ const Projects: NextPage = () => {
                     All projects can be found at: <a className="underline hover:text-green" target="_blank" href="https://github.com/EnzoBozzani?tab=repositories">https://github.com/EnzoBozzani?tab=repositories</a>
                 </p>
                 <div className="max-w-screen-xl flex flex-col justify-center items-center mx-8 gap-8">
-                    {projects.map((project: Project) => (
+                    {projects.map((project: Project, i) => (
                         <ProjectCard
                             title={project.title}
                             textContent={project.textContent}
                             repoUrl={project.url}
+                            key={i}
                         >
                             {project.icons}
                         </ProjectCard>
