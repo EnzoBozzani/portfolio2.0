@@ -44,9 +44,13 @@ export const ProjectCard: React.FC<Props> = ({ title, textContent, children, rep
                         {textContent}
                     </p>
                     : isExpanded ? <ClickToHide /> : <ClickToShow />}
-                <p className="text-green">
-                    {repoUrl}
-                </p>
+                <a
+                    target="_blank"
+                    href={repoUrl}
+                    className='border rounded w-48 sm:w-72 flex justify-center items-center bg-green py-2 font-semibold'
+                >
+                    View on GitHub
+                </a>
             </div>
         </div>
     )
