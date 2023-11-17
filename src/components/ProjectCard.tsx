@@ -1,22 +1,24 @@
-import Image from "next/image";
-
 interface Props {
     title: string;
     textContent: string;
+    children: React.ReactNode;
+    repoUrl: string;
 }
 
-export const ProjectCard: React.FC<Props> = ({ title, textContent }) => {
+export const ProjectCard: React.FC<Props> = ({ title, textContent, children, repoUrl }) => {
     return (
         <div
-            className="w-full flex flex-col border-2 border-green shadow-md shadow-green"
+            className="w-full flex flex-col border-2 border-green led-effect"
         >
-            <div className="flex flex-col p-6 gap-4 max-h-96 bg-dark">
-                <span>
+            <div className="flex flex-col p-6 gap-4 max-h-96 bg-black">
+                <span className='w-full flex justify-between px-2 items-center'>
                     <p className='text-white text-bold text-xl'>{title}</p>
-                    {/* icons aqui */}
+                    {children}
                 </span>
-                <p className='text-gray text-justify text-clip overflow-hidden'>{textContent}</p>
-                {/* link para o repositório aqui */}
+                <p className='text-gray text-justify'>{textContent}</p>
+                <p className="text-green">
+                    {repoUrl}
+                </p>
             </div>
         </div>
     )

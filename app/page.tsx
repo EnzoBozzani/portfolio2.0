@@ -38,7 +38,7 @@ const Home: NextPage = () => {
               alt="gif"
               width={500}
               height={400}
-              className='w-2/3 h-auto rounded-2xl border border-green'
+              className='w-2/3 h-auto rounded-2xl led-effect'
             />
           </div>
         </section>

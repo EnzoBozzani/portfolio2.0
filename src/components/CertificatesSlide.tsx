@@ -61,7 +61,7 @@ export const CertificatesSlide: React.FC = () => {
 
     return (
         <>
-            <div className='d-flex flex-column justify-center items-center py-4'>
+            <div className='d-flex flex-column justify-center items-center'>
                 <Splide options={{
                     type: 'loop',
                     perPage: 3,
