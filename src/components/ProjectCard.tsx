@@ -1,3 +1,6 @@
+import { useContext, useState } from "react";
+import { ScreenWidthContext } from "./Layout";
+
 interface Props {
     title: string;
     textContent: string;
@@ -6,16 +9,41 @@ interface Props {
 }
 
 export const ProjectCard: React.FC<Props> = ({ title, textContent, children, repoUrl }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const { width } = useContext(ScreenWidthContext);
+
+    const ClickToShow = () => {
+        return (
+            <p
+                className='text-gray text-justify'>
+                {textContent.slice(0, 50)}<i className="italic font-light text-white cursor-pointer" onClick={() => setIsExpanded(true)}> ...Click to Show</i>
+            </p>
+        )
+    }
+
+    const ClickToHide = () => {
+        return (
+            <p
+                className='text-gray text-justify'>
+                {textContent}<i className="italic font-light text-white cursor-pointer" onClick={() => setIsExpanded(false)}> Click to Hide</i>
+            </p>
+        )
+    }
+
     return (
         <div
             className="w-full flex flex-col border-2 border-green led-effect"
         >
-            <div className="flex flex-col p-6 gap-4 max-h-96 bg-black">
-                <span className='w-full flex justify-between px-2 items-center'>
-                    <p className='text-white text-bold text-xl'>{title}</p>
+            <div className="flex flex-col p-6 gap-4 bg-dark">
+                <span className='w-full flex flex-col flex-row gap-3 sm:flex-row justify-between px-2 items-center'>
+                    <p className='text-white text-bold text-lg sm:text-xl'>{title}</p>
                     {children}
                 </span>
-                <p className='text-gray text-justify'>{textContent}</p>
+                {width > 420 ?
+                    <p className='text-gray text-justify'>
+                        {textContent}
+                    </p>
+                    : isExpanded ? <ClickToHide /> : <ClickToShow />}
                 <p className="text-green">
                     {repoUrl}
                 </p>
