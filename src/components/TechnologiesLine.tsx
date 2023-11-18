@@ -10,7 +10,7 @@ export const Technologies: React.FC = () => {
     const [nextIconColor, setNextIconColor] = useState(grey);
     const [tailwindIconColor, setTailwindIconColor] = useState(grey);
 
-    if (width < 1024) {
+    if (width < 1210) {
         return (
             <div className='w-full flex justify-center items-center'>
                 <TechIconsSlide />

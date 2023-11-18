@@ -34,7 +34,7 @@ const Tech: NextPage = () => {
                         </p>
                     </div>
                 </section>
-                <p className="mx-auto mt-12 text-green font-bold text-4xl">
+                <p className="mx-auto mt-24 mb-0 sm:mb-12 text-green font-bold text-4xl">
                     Certificates
                 </p>
                 <CertificatesSlide />

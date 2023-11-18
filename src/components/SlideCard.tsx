@@ -6,7 +6,7 @@ interface Props {
 
 export const SlideCard: React.FC<Props> = ({ url, title }) => {
     return (
-        <div className='w-72 h-auto sm:w-96 sm:h-80 border border-gray mx-auto flex flex-col bg-black'>
+        <div className='w-72 h-auto mt-12 sm:mt-0 sm:w-96 sm:h-80 border border-gray mx-auto flex flex-col bg-black'>
             <Image
                 src={url}
                 alt="certificate"
