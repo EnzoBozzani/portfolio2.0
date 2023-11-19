@@ -1,7 +1,5 @@
-import { useState, useEffect, createContext } from "react";
+import { useState, createContext } from "react";
 import { Header, Footer, HeaderOffcanvas } from ".";
-import Aos from "aos";
-import 'aos/dist/aos.css';
 import { useScreenWidth } from "../utils/getScreenWidth";
 
 interface Props {
@@ -17,12 +15,6 @@ export const ScreenWidthContext = createContext<ContextInterface>({ width: 0 })
 export const PagesLayout: React.FC<Props> = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     const width = useScreenWidth();
-
-    useEffect(() => {
-        Aos.init({
-            duration: 500
-        });
-    }, []);
 
     return (
         <main className='layout'>

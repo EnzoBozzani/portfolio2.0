@@ -11,7 +11,7 @@ const classes = {
 export const HeaderOffcanvas: React.FC<Props> = ({ setIsOpen }: Props) => {
     return (
         <>
-            <nav data-aos="fade-left" className='w-full h-screen bg-black flex flex-col'>
+            <nav className='w-full h-screen bg-black flex flex-col'>
                 <div className="w-full flex justify-end">
                     <svg
                         onClick={() => setIsOpen(false)}

@@ -9,12 +9,11 @@ const Home: NextPage = () => {
       <main className='w-full flex flex-col justify-center items-center gap-8'>
         <div className='flex justify-center items-center'>
           <Image
-            data-aos='zoom-in'
             src='/profile.jpg'
             alt="Profile Picture"
             width={225}
             height={956}
-            className='-mx-8 z-50 w-50 sm:w-64 md:w-96 rounded-full pulseAnimation'
+            className='-mx-8 z-40 w-50 sm:w-64 md:w-96 rounded-full pulseAnimation'
           />
         </div>
         <p className='text-xl sm:text-2xl md:text-4xl text-center text-white font-black'>
