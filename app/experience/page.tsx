@@ -1,5 +1,10 @@
-import { NextPage } from "next";
+import { NextPage, Metadata } from "next";
 import { Technologies, PagesLayout, ExperienceCard, CertificatesSlide } from "@/src/components/";
+
+export const metadata: Metadata = {
+    title: 'Enzo Bozzani - Experience',
+    description: 'Enzo Bozzani, a software developer (JavaScript, TypeScript, ReactJS, NodeJS), portfolio experience page, containing information about his experience as a dev.'
+}
 
 const Tech: NextPage = () => {
     return (

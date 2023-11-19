@@ -1,7 +1,18 @@
-import { NextPage } from "next";
+import { NextPage, Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PagesLayout } from "@/src/components";
+
+export const metadata: Metadata = {
+  title: 'Enzo Bozzani - Software Developer',
+  description: 'Enzo Bozzani, a software developer (JavaScript, TypeScript, ReactJS, NodeJS), portfolio home page, containing general information. ',
+  openGraph: {
+    title: 'Enzo Bozzani - Software Developer',
+    url: 'https://enzobozzani.vercel.app',
+    images: '/website-img.png'
+  }
+}
+
 
 const Home: NextPage = () => {
   return (
@@ -11,8 +22,8 @@ const Home: NextPage = () => {
           <Image
             src='/profile.jpg'
             alt="Profile Picture"
-            width={225}
-            height={956}
+            width={320}
+            height={297}
             className='-mx-8 z-40 w-50 sm:w-64 md:w-96 rounded-full pulseAnimation'
           />
         </div>
@@ -35,8 +46,8 @@ const Home: NextPage = () => {
             <Image
               src='/coding.gif'
               alt="gif"
-              width={500}
-              height={400}
+              width={638}
+              height={380}
               className='w-2/3 h-auto rounded-2xl led-effect'
             />
           </div>

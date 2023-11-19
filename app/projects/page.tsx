@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { NextPage, Metadata } from "next";
 import { PagesLayout, ProjectCard } from "@/src/components";
 
 type Project = {
@@ -6,6 +6,11 @@ type Project = {
     url: string;
     textContent: string;
     icons: React.ReactNode;
+}
+
+export const metadata: Metadata = {
+    title: 'Enzo Bozzani - Projects',
+    description: 'Enzo Bozzani, a software developer (JavaScript, TypeScript, ReactJS, NodeJS), portfolio projects page, containing information about his main projects.'
 }
 
 const projects: Project[] = [
