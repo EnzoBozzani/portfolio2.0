@@ -12,6 +12,9 @@ import { CertificatesSlide } from "./CertificatesSlide";
 import { TechIconsSlide } from "./TechIconsSlide";
 import { Development } from "./Development";
 import { ProjectCard } from "./ProjectCard";
+import { Toast } from "./Toast";
+import { ContactSection } from "./ContactSection";
+import { SocialMediaSection } from "./SocialMediaSection";
 
 export {
     PagesLayout,
@@ -25,5 +28,8 @@ export {
     CertificatesSlide,
     TechIconsSlide,
     Development,
-    ProjectCard
+    ProjectCard,
+    Toast,
+    ContactSection,
+    SocialMediaSection
 };
