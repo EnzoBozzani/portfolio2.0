@@ -8,7 +8,7 @@ interface Props {
 
 const classes = {
     homeAnchor: 'w-fit py-1.5 px-5 text-white text-xl sm:text-2xl md:text-4xl flex justify-center items-center gap-2 transition duration-500 hover:text-slate-300',
-    header: "flex justify-between p-2 md:p-6 w-full mb-8 sticky top-0 backdrop-blur z-50",
+    header: "flex justify-between p-2 md:p-6 w-full mb-8 sticky top-0 backdrop-blur z-40",
     headerAnchors: 'text-gray transition duration-500 border-b-2 border-transparent pb-3 hover:border-green hover:text-white'
 }
 

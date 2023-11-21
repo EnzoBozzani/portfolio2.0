@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             alt="Profile Picture"
             width={320}
             height={297}
-            className='-mx-8 z-40 w-50 sm:w-64 md:w-96 rounded-full pulseAnimation'
+            className='-mx-8 z-30 w-50 sm:w-64 md:w-96 rounded-full pulseAnimation'
           />
         </div>
         <p className='text-xl sm:text-2xl md:text-4xl text-center text-white font-black'>

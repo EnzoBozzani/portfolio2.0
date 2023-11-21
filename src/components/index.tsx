@@ -14,7 +14,7 @@ import { Development } from "./Development";
 import { ProjectCard } from "./ProjectCard";
 import { Toast } from "./Toast";
 import { ContactSection } from "./ContactSection";
-import { SocialMediaSection } from "./SocialMediaSection";
+import { ResumeSection } from "./ResumeSection";
 
 export {
     PagesLayout,
@@ -31,5 +31,5 @@ export {
     ProjectCard,
     Toast,
     ContactSection,
-    SocialMediaSection
+    ResumeSection
 };

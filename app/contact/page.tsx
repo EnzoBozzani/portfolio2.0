@@ -1,5 +1,5 @@
 import { NextPage, Metadata } from "next";
-import { ContactSection, Development, PagesLayout, SocialMediaSection, Toast } from "@/src/components";
+import { ContactSection, PagesLayout, ResumeSection } from "@/src/components";
 
 export const metadata: Metadata = {
     title: 'Enzo Bozzani - Contact',
@@ -11,8 +11,11 @@ const ContactPage: NextPage = () => {
     return (
         <PagesLayout>
             <main className="flex-1">
+                <h2 className='text-4xl sm:text-6xl text-green font-bold w-full text-center my-12'>
+                    Contact
+                </h2>
                 <ContactSection />
-                <Development />
+                <ResumeSection />
             </main>
         </PagesLayout>
     )
