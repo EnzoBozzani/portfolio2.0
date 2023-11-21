@@ -8,7 +8,7 @@ interface Props {
 export const Toast: React.FC<Props> = ({ text, type, setIsOpen }) => {
 
     return (
-        <div className={`w-72 flex justify-between items-center rounded p-4 ${type === 'success' ? 'bg-green' : type === 'error' ? 'bg-red-500' : 'bg-neutral-500'} absolute z-50 top-5 right-5`}>
+        <div className={`w-64 md:w-72 flex justify-between items-center rounded p-4 ${type === 'success' ? 'bg-green' : type === 'error' ? 'bg-red-500' : 'bg-neutral-500'} absolute z-50 top-5 right-5`}>
             <p className="text-dark">
                 {text}
             </p>

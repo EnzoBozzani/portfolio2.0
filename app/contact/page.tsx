@@ -10,9 +10,9 @@ const ContactPage: NextPage = () => {
 
     return (
         <PagesLayout>
-            <main className="w-screen-xl mx-auto flex lg:flex-col justify-center items-center">
+            <main className="flex-1">
                 <ContactSection />
-                <SocialMediaSection />
+                <Development />
             </main>
         </PagesLayout>
     )
