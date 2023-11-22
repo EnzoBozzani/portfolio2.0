@@ -24,17 +24,17 @@ export const HeaderOffcanvas: React.FC<Props> = ({ setIsOpen }: Props) => {
                     </svg>
                 </div>
                 <div className="w-full mt-24 flex flex-col justify-center items-center gap-12">
-                    <Link className={classes.link} href='/experience'>
+                    <Link className={classes.link} href={`/experience?lang=${lang}`}>
                         {lang === 'en' ? 'Experience' : 'Experiência'}
                     </Link>
-                    <Link className={classes.link} href='/projects'>
+                    <Link className={classes.link} href={`/projects?lang=${lang}`}>
                         {lang === 'en' ? 'Projects' : 'Projetos'}
                     </Link>
-                    <Link className={classes.link} href='/contact'>
+                    <Link className={classes.link} href={`/contact?lang=${lang}`}>
                         {lang === 'en' ? 'Contact' : 'Contato'}
                     </Link>
                     <button
-                        onClick={() => setLang((current) => current === 'pt' ? 'en' : 'pt')}
+                        onClick={() => setLang((current: any) => current === 'pt' ? 'en' : 'pt')}
                         className='w-1/3 rounded shadow-2xl shadow-green bg-green border-2 border-black flex justify-center items-center py-2 text-xl font-bold hover:-translate-y-2 transition duration-500'
                     >
                         <p className='text-2xl'>

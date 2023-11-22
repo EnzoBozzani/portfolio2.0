@@ -1,6 +1,6 @@
 import { NextPage, Metadata } from "next";
 import { PagesLayout } from "@/src/components/";
-import { ExperiencePage } from "@/src/pages";
+import { ExperiencePage } from "@/src/screens";
 
 export const metadata: Metadata = {
     title: 'Enzo Bozzani - Experience',

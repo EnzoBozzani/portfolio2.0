@@ -1,6 +1,6 @@
 import { NextPage, Metadata } from "next";
 import { PagesLayout } from "@/src/components";
-import { ContactPage } from "@/src/pages";
+import { ContactPage } from "@/src/screens";
 
 export const metadata: Metadata = {
     title: 'Enzo Bozzani - Contact',

@@ -2,5 +2,6 @@
 
 import { ContactPage } from "./ContactPage";
 import { ExperiencePage } from "./ExperiencePage";
+import { ProjectsPage } from "./ProjectsPage";
 
-export { ContactPage, ExperiencePage };
+export { ContactPage, ExperiencePage, ProjectsPage };

@@ -19,7 +19,7 @@ export const Header: React.FC<Props> = ({ setIsOpen }: Props) => {
         return (
             <>
                 <header className={classes.header}>
-                    <Link href={'/'} className='w-fit py-1.5 px-5 text-white text-xl sm:text-2xl md:text-4xl flex justify-center items-center gap-2 transition duration-500 hover:text-slate-300'>
+                    <Link href={`/?lang=${lang}`} className='w-fit py-1.5 px-5 text-white text-xl sm:text-2xl md:text-4xl flex justify-center items-center gap-2 transition duration-500 hover:text-slate-300'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
                             className="w-8 h-8 text-green"
                         >
@@ -39,7 +39,7 @@ export const Header: React.FC<Props> = ({ setIsOpen }: Props) => {
 
     return (
         <header className={classes.header}>
-            <Link href={'/'} className='w-fit py-1.5 px-5 text-white text-xl sm:text-2xl md:text-4xl flex justify-center items-center gap-2 transition duration-500 hover:text-slate-300 mb-3'>
+            <Link href={`/?lang=${lang}`} className='w-fit py-1.5 px-5 text-white text-xl sm:text-2xl md:text-4xl flex justify-center items-center gap-2 transition duration-500 hover:text-slate-300 mb-3'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
                     className="w-8 h-8 text-green"
                 >
@@ -48,17 +48,17 @@ export const Header: React.FC<Props> = ({ setIsOpen }: Props) => {
                 <span>Enzo</span><span>Bozzani</span>
             </Link>
             <nav className="flex justify-center items-center gap-2.5 w-fit">
-                <Link href={'/experience'} className={classes.headerAnchors}>
+                <Link href={`/experience?lang=${lang}`} className={classes.headerAnchors}>
                     {lang === 'en' ? 'Experience' : 'Experiência'}
                 </Link>
-                <Link href={'/projects'} className={classes.headerAnchors}>
+                <Link href={`/projects?lang=${lang}`} className={classes.headerAnchors}>
                     {lang === 'en' ? 'Projects' : 'Projetos'}
                 </Link>
-                <Link href={'/contact'} className={classes.headerAnchors}>
+                <Link href={`/contact?lang=${lang}`} className={classes.headerAnchors}>
                     {lang === 'en' ? 'Contact' : 'Contato'}
                 </Link>
                 <button
-                    onClick={() => setLang((current) => current === 'pt' ? 'en' : 'pt')}
+                    onClick={() => setLang((current: any) => current === 'pt' ? 'en' : 'pt')}
                     className='ms-6 mb-3 flex justify-center items-center gap-2 rounded border-2 border-gray px-4 py-1 text-gray hover:border-green hover:text-white transition duration-500'
                 >
                     <p className='text-2xl'>
