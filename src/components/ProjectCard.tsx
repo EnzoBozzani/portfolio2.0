@@ -17,7 +17,8 @@ export const ProjectCard: React.FC<Props> = ({ title, textContent, children, rep
         return (
             <p
                 className='text-gray text-justify'>
-                {textContent.slice(0, 50)}<i className="italic font-light text-white cursor-pointer" onClick={() => setIsExpanded(true)}> ...Click to Show</i>
+                {textContent.slice(0, 50)}<i className="italic font-light text-white cursor-pointer" onClick={() => setIsExpanded(true)}>
+                    {lang === 'en' ? ' ...Click to Show' : '...Clique p/ Mostrar'}</i>
             </p>
         )
     }
@@ -26,7 +27,8 @@ export const ProjectCard: React.FC<Props> = ({ title, textContent, children, rep
         return (
             <p
                 className='text-gray text-justify'>
-                {textContent}<i className="italic font-light text-white cursor-pointer" onClick={() => setIsExpanded(false)}> Click to Hide</i>
+                {textContent}<i className="italic font-light text-white cursor-pointer" onClick={() => setIsExpanded(false)}>
+                    {lang === 'en' ? ' Click to Hide' : ' Clique p/ Esconder'}</i>
             </p>
         )
     }
