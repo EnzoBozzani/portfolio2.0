@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { ScreenWidthContext } from "./Layout";
+import { ScreenWidthContext, TranslationContext } from "./Layout";
 
 interface Props {
     title: string;
@@ -11,6 +11,7 @@ interface Props {
 export const ProjectCard: React.FC<Props> = ({ title, textContent, children, repoUrl }) => {
     const [isExpanded, setIsExpanded] = useState(false);
     const { width } = useContext(ScreenWidthContext);
+    const { lang } = useContext(TranslationContext);
 
     const ClickToShow = () => {
         return (
@@ -49,7 +50,12 @@ export const ProjectCard: React.FC<Props> = ({ title, textContent, children, rep
                     href={repoUrl}
                     className='border rounded w-48 sm:w-72 flex justify-center items-center bg-green py-2 font-semibold'
                 >
-                    View on GitHub
+                    {
+                        lang === 'en' ?
+                            "View on GitHub"
+                            :
+                            "Veja no GitHub"
+                    }
                 </a>
             </div>
         </div>

@@ -1,9 +1,13 @@
+import { useContext } from "react"
+import { TranslationContext } from "./Layout"
+
 export const ExperienceCard: React.FC = () => {
+    const { lang } = useContext(TranslationContext);
 
     return (
         <div className='pulse-with-border-animation max-w-screen-xl rounded-lg px-4 flex flex-col items-center justify-center gap-6 py-2 m-8'>
             <div className="highlighted">
-                FrontEnd Developer at CADFEI: Professor Career Institucional Website
+                {lang === 'en' ? 'FrontEnd Developer at CADFEI: Professor Career Institucional Website' : 'Desenvolvedor FrontEnd em CADFEI: Site Institucional de Carreira Docente'}
             </div>
             <div className='flex justify-center items-center gap-1'>
                 <svg
@@ -23,11 +27,14 @@ export const ExperienceCard: React.FC = () => {
                 </svg>
             </div>
             <div className='text-center'>
-                FrontEnd Development using React, TypeScript, Redux, CSS & Vite.
-                CADFEI is FEI professor's institucional website.
+                {lang === 'en' ?
+                    "FrontEnd Development using React, TypeScript, Redux, CSS & Vite. CADFEI is FEI professor's institucional website."
+                    :
+                    "Desenvolvimento de FrontEnd usando React, TypeScript, Redux, CSS & Vite. CADFEI é o site institucional dos professores da FEI"
+                }
             </div>
             <span className="text-gray">
-                September/2023 - Now
+                {lang === 'en' ? "September/2023 - Now" : "Setembro/2023 - Agora"}
             </span>
         </div>
     )
