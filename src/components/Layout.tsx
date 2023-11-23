@@ -30,21 +30,12 @@ export const PagesLayout: React.FC<Props> = ({ children }) => {
         <main className='layout'>
             <TranslationContext.Provider value={{ lang: language, setLang: setLang }}>
                 <ScreenWidthContext.Provider value={{ width }} >
-                    {isOpen ?
-                        <HeaderOffcanvas
-                            setIsOpen={setIsOpen}
-                        />
-                        :
-                        (
-                            <>
-                                <Header
-                                    setIsOpen={setIsOpen}
-                                />
-                                {children}
-                                <Footer />
-                            </>
-                        )
-                    }
+                    <Header
+                        setIsOpen={setIsOpen}
+                    />
+                    {children}
+                    <Footer />
+                    {isOpen && <HeaderOffcanvas setIsOpen={setIsOpen} />}
                 </ScreenWidthContext.Provider>
             </TranslationContext.Provider>
         </main>

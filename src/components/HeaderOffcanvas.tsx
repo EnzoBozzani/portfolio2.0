@@ -7,7 +7,7 @@ interface Props {
 };
 
 const classes = {
-    link: 'w-5/6 md:w-1/3 rounded shadow-2xl shadow-green bg-green border-2 border-black flex justify-center items-center py-2 text-xl font-bold hover:-translate-y-2 transition duration-500'
+    link: 'w-5/6 md:w-1/3 rounded bg-green border-2 border-black flex justify-center items-center py-2 text-xl font-bold hover:-translate-y-2 transition duration-500'
 };
 
 export const HeaderOffcanvas: React.FC<Props> = ({ setIsOpen }: Props) => {
@@ -15,7 +15,7 @@ export const HeaderOffcanvas: React.FC<Props> = ({ setIsOpen }: Props) => {
 
     return (
         <>
-            <nav className='w-full min-h-screen bg-black flex flex-col'>
+            <nav className='z-50 w-screen h-full fixed top-0 left-0 bg-black/90 flex flex-col'>
                 <div className="w-full flex justify-end">
                     <svg
                         onClick={() => setIsOpen(false)}
@@ -35,7 +35,7 @@ export const HeaderOffcanvas: React.FC<Props> = ({ setIsOpen }: Props) => {
                     </Link>
                     <button
                         onClick={() => setLang((current: any) => current === 'pt' ? 'en' : 'pt')}
-                        className='w-1/3 rounded shadow-2xl shadow-green bg-green border-2 border-black flex justify-center items-center py-2 text-xl font-bold hover:-translate-y-2 transition duration-500'
+                        className='w-1/3 rounded bg-green border-2 border-black flex justify-center items-center py-2 text-xl font-bold hover:-translate-y-2 transition duration-500'
                     >
                         <p className='text-2xl'>
                             {lang.toUpperCase()}
