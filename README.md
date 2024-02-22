@@ -1,4 +1,4 @@
-<h1>Onebitflix Backend</h1>
+<h1>Portfolio-v2</h1>
 
 > Project Status: Finished (November 22, 2023)
 
@@ -32,4 +32,22 @@
 
 ## Run application:
 
-Application is available at <a href='https://enzobozzani.vercel.app'>https://enzobozzani.vercel.app</a>
+My current portfolio is available at: [https://enzobozzani.vercel.app](https://enzobozzani.vercel.app)
+
+Clone project:
+
+```
+git clone https://github.com/EnzoBozzani/portfolio2.0.git
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run project:
+
+```
+npm run dev
+```
